@@ -1,0 +1,242 @@
+*{
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Papyrus';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Papyrus'), url('fonts/PAPYRUS.TTF') format('TTF');
+  }
+  @font-face {
+    font-family: 'Determination Mono Web Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Determination Mono Web Regular'), url('fonts/determinationmonowebwebfont.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'COMIC';
+      font-style: normal;
+      font-weight: normal;
+      src: local('Comic Sans MS'), url('fonts/COMIC.TTF') format('ttf');
+      }
+  
+body {
+  background-image: url(pewdiepie.png);
+
+}
+.box {
+  border: 5px solid rgb(163, 161, 161);
+  margin: 0;
+  padding: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(54, 53, 53);
+  color: rgb(226, 220, 220);
+  border-radius: 20px;
+
+}
+
+.nameholder {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 8px;
+  width: 170px;
+  font-family: monospace;  
+  letter-spacing: 1px;
+}
+
+.linkholder {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 8px;
+  width: 240px;  
+  font-family: monospace;
+  letter-spacing: 1px;  
+}
+
+.button {
+  padding: 8px;
+  font-size: 15px;
+  background: linear-gradient(to right, #864274 0%, #437ba0 100% );
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-family: monospace; 
+  border: solid rgb(151, 148, 148);
+}
+
+.button:hover {
+  padding: 8px;
+  font-size: 15px;
+  background: linear-gradient(to right, #e42bb2 0%, #0097ff 100% );
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-family: monospace; 
+  border: solid rgb(235, 226, 226);
+  font: bold;
+  transition: all 100ms linear;
+  transition-timing-function: ease-in-out;
+}
+
+h1 {
+  font-family: monospace;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-family: monospace;
+  letter-spacing: 1px;
+}
+
+.textabout{
+  font-family: monospace;
+  letter-spacing: 0px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.comment-box {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 240px;
+  height: 120px;  
+  font-family: monospace;
+  letter-spacing: 1px;   
+}
+
+.header {
+  width: 1500px;
+  height: 60px;
+  background-color: rgb(54, 53, 53);
+  opacity: 0.9;
+  position: fixed;
+}
+
+.name {
+  font-size: 46px;
+  font-family: monospace;
+  padding-left: 5px;
+  color: aliceblue;
+  position: absolute;
+}
+
+.namesubject{
+  color: aliceblue;
+  font-family: monospace;
+  font-size: 15px;
+  position: absolute;
+  left: 285px;
+  top: 28px;
+
+}
+
+.upload{
+  position: absolute;
+  left: 900px;
+  top: 5px;
+  font-size: 42px;
+  font-family: monospace;
+  color: aliceblue;
+}
+
+.about{
+  position: absolute;
+  left: 1100px;
+  top: 5px;
+  font-size: 42px;
+  font-family: monospace;
+  color: aliceblue;
+}
+
+.search {
+  padding: 13px;
+  width: 300px;
+  height: 25px;
+  position: absolute;
+  left: 520px;
+  top: 20px;
+  border-radius: 8px;
+  
+}
+
+
+.text{
+  color: black;
+  position: absolute;
+  border: 5px solid white;
+  padding: 10px;
+  width: 500px;
+  height: 150px;
+  left: 700px;
+  background-color: black;
+  font-family: 'Determination Mono Web Regular';
+  font-size: 20px; 
+  text-align: left;
+}
+
+.text:hover{
+  color: white;
+  position: absolute;
+  border: 5px solid white;
+  padding: 10px;
+  width: 500px;
+  height: 150px;
+  left: 700px;
+  top: 200px;
+  background-color: black;
+  font-family: 'Determination Mono Web Regular';
+  font-size: 30px; 
+  transition: color 100ms linear;
+  z-index:unset;
+  text-align: left;
+}
+
+.text img{
+  width: 100px;
+  padding: 5px;
+}
+
+
+.sprite{
+  float: left;
+}
+
+.column{
+  width: fit-content;
+  padding: 10px 10px 0px 10px;
+
+}
+
+.image-bottom{
+  width: 590px;
+  height: 30px;
+  background-color: #3d3b3b;
+  padding: 8px;
+  margin: 0px 0px 8px 8px;
+  position: relative;
+  left: -1px;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 5px 10px 18px #1a1919;
+}
+
+.bottom-text{
+  font-family: Arial; 
+  font-weight: bold; 
+  color: white; 
+  margin-bottom: 5px;
+  
+}
+
+.upvote{
+  height: 35px; 
+  width: 35px; 
+  float: right;
+}
+
+.meme-text {
+  color: white;
+  
+}
