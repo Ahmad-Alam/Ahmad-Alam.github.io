@@ -1,14 +1,12 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - Ahmad-Alam
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - Ahmad-Alam/GestuNova
+  - Ahmad-Alam/retail-market-basket-analysis
+  - Ahmad-Alam/lahore-rent-2022-eda
+  - Ahmad-Alam/Crime-Data-Analysis
+  - Ahmad-Alam/HotelReviewAnalyzer
+  - Ahmad-Alam/Chess-Blunder-Detection
