@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Uncovering Lahore's Property Market Patterns: A Data Science Journey"
+title: Uncovering Lahore's Property Market Patterns 
 date: 2024-12-13
 description: How data science revealed hidden patterns in Lahore's rental market
 tags: data-science property-analysis pakistan
 categories: projects
-giscus_comments: true
 featured: true
 toc:
   beginning: true

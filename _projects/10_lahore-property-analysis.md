@@ -2,12 +2,8 @@
 layout: page
 title: Lahore Property Market Analysis
 description: A comprehensive analysis of Lahore's rental property market using data analytics and geospatial visualization
-img: assets/img/projects/lahore-property-heatmap.jpg
 importance: 1
-category: data-science
-github_repo: lahore-property-analysis
-toc:
-  sidebar: left
+category: fun
 ---
 
 ## Overview
