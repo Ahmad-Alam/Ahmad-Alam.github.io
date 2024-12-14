@@ -3,6 +3,7 @@ layout: page
 title: Lahore Property Market Analysis
 description: A comprehensive analysis of Lahore's rental property market using data analytics and geospatial visualization
 importance: 1
+img: assets/img/projects/lahore-preview.jpg
 category: work
 toc:
   sidebar: left
@@ -35,6 +36,14 @@ An in-depth analysis of Lahore's rental property market using Python and data sc
 ## Key Findings
 
 ### Market Segmentation
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/projects/price-box.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/projects/bedrooms.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 - 3-4 bedroom properties dominate the market (65%)
 - Houses show highest median prices but largest variation
 - Strong correlation between property size and price (r = 0.78)
@@ -46,7 +55,14 @@ An in-depth analysis of Lahore's rental property market using Python and data sc
 - Suburban areas demonstrate varied pricing patterns
 
 ### Price Analysis
-{% include figure.liquid path="assets/img/projects/price-distribution.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/projects/price-distribution.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/projects/price-per-marla.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 - Median rental price: PKR 45,000
 - Price per Marla shows significant variation
 - Property type strongly influences price distribution
@@ -64,6 +80,15 @@ def extract_price(price_str):
         elif 'Thousand' in price_str:
             return num * 1000
     return None
+```
+
+```python
+def standardize_area(area_str):
+    # Convert all to Marla (1 Kanal = 20 Marla)
+    if 'Kanal' in area_str:
+        num = float(''.join(filter(str.isdigit, area_str)))
+        return num * 20
+    return float(''.join(filter(str.isdigit, area_str)))
 ```
 
 ### Geospatial Analysis
