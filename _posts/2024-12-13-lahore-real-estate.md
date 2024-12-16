@@ -43,6 +43,43 @@ Inspired by the innovative approach of Truong et al. {% cite TRUONG2020433 %} in
     Geospatial distribution of property prices across Lahore. Color intensity indicates price levels.
 </div>
 
+## Geographical Distribution of Properties
+
+The interactive map below shows the distribution of all property listings across Lahore. Each blue marker represents a property location, while the red star marks the city center. This visualization helps illustrate both the spread of properties across different neighborhoods and the relationship between location and property concentration.
+
+```geojson
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "City Center",
+        "popupContent": "Lahore City Center",
+        "marker-symbol": "star",
+        "marker-color": "#ff0000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [74.3087, 31.5204]
+      }
+    },
+    {"type": "Feature", "properties": {"popupContent": "Property Location"}, "geometry": {"type": "Point", "coordinates": [74.264358, 31.431199]}},
+    {"type": "Feature", "properties": {"popupContent": "Property Location"}, "geometry": {"type": "Point", "coordinates": [74.258648, 31.456696]}},
+    {"type": "Feature", "properties": {"popupContent": "Property Location"}, "geometry": {"type": "Point", "coordinates": [74.286887, 31.443183]}},
+    {"type": "Feature", "properties": {"popupContent": "Property Location"}, "geometry": {"type": "Point", "coordinates": [74.308071, 31.447469]}},
+    {"type": "Feature", "properties": {"popupContent": "Property Location"}, "geometry": {"type": "Point", "coordinates": [74.259748, 31.443262]}},
+    {"type": "Feature", "properties": {"popupContent": "Property Location"}, "geometry": {"type": "Point", "coordinates": [74.176841, 31.369488]}},
+    {"type": "Feature", "properties": {"popupContent": "Property Location"}, "geometry": {"type": "Point", "coordinates": [74.232511, 31.368900]}},
+    {"type": "Feature", "properties": {"popupContent": "Property Location"}, "geometry": {"type": "Point", "coordinates": [74.283953, 31.420537]}},
+    {"type": "Feature", "properties": {"popupContent": "Property Location"}, "geometry": {"type": "Point", "coordinates": [74.348483, 31.431384]}},
+    {"type": "Feature", "properties": {"popupContent": "Property Location"}, "geometry": {"type": "Point", "coordinates": [74.380779, 31.467638]}},
+    {"type": "Feature", "properties": {"popupContent": "Property Location"}, "geometry": {"type": "Point", "coordinates": [74.202524, 31.452773]}}
+  ]
+}
+
+```
+
 ## The Price Paradox
 
 Perhaps the most intriguing finding is what I call the "suburban premium paradox." Conventional wisdom suggests that properties closest to the city center should command the highest prices. While this holds true for properties very close to the center (averaging PKR 86,700), there's an unexpected twist: properties far from the center actually command higher prices than those moderately close to it.
