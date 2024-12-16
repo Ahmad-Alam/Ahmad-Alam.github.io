@@ -1,23 +1,19 @@
 ---
 ---
 <div class="row">
-  <div class="col-sm-10">
+  <div id="{{ entry.key }}" class="col-sm-10">
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
+    
     <!-- Author -->
     <div class="author">
-      {%- for author in entry.author_array -%}
+      {% for author in entry.author_array %}
         {%- if forloop.length > 1 -%}
-          {%- if forloop.last -%}
-            and
-          {%- else -%}
-            {%- unless forloop.first -%}
-              ,
-            {%- endunless -%}
-          {%- endif -%}
-        {%- endif -%}
+          {% if forloop.first == false %}, {% endif %}
+          {%- if forloop.last %}and {% endif -%}
+        {% endif %}
         {{- author.first }} {{ author.last -}}
-      {%- endfor -%}
+      {% endfor %}
     </div>
 
     <!-- Journal/Book title and date -->
@@ -30,13 +26,13 @@
     </div>
     {% endif %}
 
-    <!-- Links/Buttons -->
+    <!-- Links -->
     <div class="links">
       {% if entry.doi %}
         <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
       {% endif %}
-      {% if entry.arxiv %}
-        <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
+      {% if entry.url %}
+        <a href="{{ entry.url }}" class="btn btn-sm z-depth-0" role="button">URL</a>
       {% endif %}
     </div>
   </div>
