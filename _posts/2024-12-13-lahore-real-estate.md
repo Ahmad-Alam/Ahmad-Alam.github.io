@@ -32,7 +32,7 @@ Houses dominate the market, but what's particularly interesting is the thriving 
 
 ## Geospatial Analysis and Price Distribution
 
-Inspired by the innovative approach of Truong et al. {% reference TRUONG2020433 %} in their housing price prediction study, I implemented a geospatial analysis of Lahore's property market. Using Google's Geocoding API, I mapped each property's location to its corresponding latitude and longitude coordinates. This allowed me to create a comprehensive visualization of price distributions across the city.
+Inspired by the innovative approach of Truong et al. {% cite TRUONG2020433 %} in their housing price prediction study, I implemented a geospatial analysis of Lahore's property market. Using Google's Geocoding API, I mapped each property's location to its corresponding latitude and longitude coordinates. This allowed me to create a comprehensive visualization of price distributions across the city.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -71,7 +71,7 @@ As Lahore continues to grow and evolve, these patterns will likely shift. The ri
 
 The story of Lahore's real estate market is, in many ways, the story of Lahore itself – a city balancing tradition with transformation, family values with modern aspirations, and organic growth with planned development. For anyone interested in understanding urban development in South Asia, Lahore offers a fascinating case study of how housing markets adapt to and reflect social change.
 
-Note: This analysis was conducted using Python and pandas, examining a dataset of over 17,500 property listings across Lahore. All prices are in Pakistani Rupees (PKR). The geospatial analysis methodology was inspired by the work of Truong et al. {% reference TRUONG2020433 %}. For the complete technical analysis, including code and methodology, please visit the [project documentation](https://ahmad-alam.github.io/projects/lahore-property-analysis/)._
+Note: This analysis was conducted using Python and pandas, examining a dataset of over 17,500 property listings across Lahore. All prices are in Pakistani Rupees (PKR). The geospatial analysis methodology was inspired by the work of Truong et al. {% cite TRUONG2020433 %}. For the complete technical analysis, including code and methodology, please visit the [project documentation](https://ahmad-alam.github.io/projects/lahore-property-analysis/)._
 
 ## References
 
