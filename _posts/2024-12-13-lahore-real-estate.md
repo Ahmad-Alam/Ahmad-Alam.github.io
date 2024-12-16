@@ -9,6 +9,7 @@ toc:
   beginning: true
 related_papers: true
 bibliography: papers.bib
+map: true
 ---
 
 # Beyond the Numbers: Understanding Lahore's Real Estate Landscape
