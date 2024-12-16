@@ -7,17 +7,40 @@ tags: data-science property-analysis pakistan
 categories: projects
 toc:
   beginning: true
+related_papers: true
 ---
 
 # Beyond the Numbers: Understanding Lahore's Real Estate Landscape
 
-The real estate market in Lahore tells a fascinating story of urban development, cultural preferences, and economic patterns. After diving deep into data from over 17,500 property listings, I've uncovered some surprising insights about Pakistan's second-largest city and its housing market.
+The real estate market in Lahore tells a fascinating story of urban development, cultural preferences, and economic patterns. After diving deep into data from over 17,500 property listings, I've uncovered some surprising insights about Pakistan's second-largest city and its housing market. For those interested in the technical details of this analysis, including the complete code and methodology, you can find the detailed project documentation [here](https://ahmad-alam.github.io/projects/lahore-property-analysis/).
 
 ## The Heart of Lahore's Housing Culture
 
 One of the most striking things about Lahore's real estate market is how it reflects the city's strong family-oriented culture. The overwhelming preference for 3-bedroom, 3-bathroom homes isn't just about square footage – it's a reflection of the multigenerational living arrangements that are deeply woven into Pakistani society. These homes often accommodate extended families, with spaces that can be both private and communal.
 
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/projects/bedrooms.png" title="Distribution of Rooms" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Distribution of bedrooms and bathrooms across properties in Lahore
+</div>
+
 Houses dominate the market, but what's particularly interesting is the thriving market for "portions" – upper and lower sections of houses that are rented out separately. This unique feature of Lahore's real estate landscape speaks to both the entrepreneurial spirit of homeowners and the practical solutions that have evolved to address housing demands in a growing city.
+
+## Geospatial Analysis and Price Distribution
+
+Inspired by the innovative approach of Truong et al. {% cite TRUONG2020433 %} in their housing price prediction study, I implemented a geospatial analysis of Lahore's property market. Using Google's Geocoding API, I mapped each property's location to its corresponding latitude and longitude coordinates. This allowed me to create a comprehensive visualization of price distributions across the city.
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/projects/location-heatmap-lahore.png" title="Property Price Distribution" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Geospatial distribution of property prices across Lahore. Color intensity indicates price levels.
+</div>
 
 ## The Price Paradox
 
@@ -47,4 +70,5 @@ As Lahore continues to grow and evolve, these patterns will likely shift. The ri
 
 The story of Lahore's real estate market is, in many ways, the story of Lahore itself – a city balancing tradition with transformation, family values with modern aspirations, and organic growth with planned development. For anyone interested in understanding urban development in South Asia, Lahore offers a fascinating case study of how housing markets adapt to and reflect social change.
 
-_Note: This analysis was conducted using Python and pandas, examining a dataset of over 17,500 property listings across Lahore. All prices are in Pakistani Rupees (PKR). For the complete technical analysis, including code and methodology, please visit the [project documentation](https://ahmad-alam.github.io/projects/lahore-property-analysis/)._
+Note: This analysis was conducted using Python and pandas, examining a dataset of over 17,500 property listings across Lahore. All prices are in Pakistani Rupees (PKR). The geospatial analysis methodology was inspired by the work of Truong et al. {% cite TRUONG2020433 %}. For the complete technical analysis, including code and methodology, please visit the [project documentation](https://ahmad-alam.github.io/projects/lahore-property-analysis/)._
+
