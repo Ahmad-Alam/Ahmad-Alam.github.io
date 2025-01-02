@@ -14,7 +14,7 @@
         "username": "Ahmad-Alam"
       }
     ],
-    "summary": "Machine Learning Engineer with expertise in computer vision and gesture recognition systems. Experienced in developing end-to-end ML solutions with focus on real-time processing and model optimization."
+    "summary": "Recent Computer Science graduate with strong foundation in machine learning and software development. Demonstrated experience in building applications using computer vision libraries, data analysis, and creating user-friendly interfaces. Passionate about applying ML technologies to solve practical problems, with particular interest in gesture recognition and sentiment analysis."
   },
   "skills": [
     {
@@ -35,14 +35,14 @@
     }
   ],
   "projects": [
-    {
+{
       "name": "GestuNova",
-      "description": "Developed real-time hand gesture recognition system for hands-free computer control",
+      "description": "Developed a Linux application for hands-free computer control using gesture recognition",
       "highlights": [
-        "Implemented hand landmark detection using MediaPipe with machine learning for gesture classification",
-        "Created efficient preprocessing algorithms for real-time performance",
-        "Developed user-friendly GUI for binding custom gestures to system commands",
-        "Integrated with Linux system utilities for keyboard and command automation"
+        "Built a desktop application that integrates MediaPipe's hand tracking to enable gesture-based computer control",
+        "Developed user-friendly GUI allowing users to create and customize gesture-to-command mappings",
+        "Implemented system integration layer to execute Linux commands and keyboard shortcuts based on detected gestures",
+        "Created robust event handling system to manage real-time gesture detection and command execution"
       ],
       "startDate": "2023-09",
       "endDate": "2024-06"
