@@ -3,7 +3,7 @@ layout: post
 title: Building a CLI Journaling System for ADHD-Friendly Self-Reflection
 date: 2025-01-03
 description: How I created a minimal, data-driven journaling system to overcome ADHD challenges and track personal growth
-tags: programming personal-project cli bash
+tags: programming personal-project cli bash goals
 categories: projects
 ---
 
