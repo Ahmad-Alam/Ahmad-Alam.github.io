@@ -1,14 +1,11 @@
 ---
 layout: post
 title: Crime Data Analysis in England - A Tale of Three Counties
-date: 2024-01-04
+date: 2025-01-04
 description: A comprehensive analysis of crime patterns across Derbyshire, Kent, and Leicestershire using Apache Spark and Python
 tags: data-analysis spark python visualization
 categories: projects
-giscus_comments: true
 related_posts: true
-toc:
-  sidebar: left
 mermaid:
   enabled: true
 chart:
@@ -137,28 +134,16 @@ The monthly analysis revealed interesting seasonal patterns:
 
 ### Crime Type Distribution
 
-Here's a typogram showing the hierarchy of most common crimes:
+The following visualization shows the distribution of different crime types across the three counties:
 
-```typograms
-+------------------------+
-|  Violence & Sexual     |
-|     Offenses          |
-|   (Most Common)       |
-+------------------------+
-          |
-          v
-+------------------------+
-|   Property Crime       |
-|  (Medium Frequency)    |
-+------------------------+
-          |
-          v
-+------------------------+
-| Theft from Person      |
-| Robbery/Bicycle Theft  |
-|   (Least Common)       |
-+------------------------+
-```
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/projects/crime_types.png" title="Crime Types Distribution" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<div class="caption">
+    Distribution of different crime types across Derbyshire, Kent, and Leicestershire counties in 2022
+</div>
 
 ## Technical Implementation
 
@@ -219,6 +204,13 @@ Future analyses could include:
 - Weather impact analysis
 - Socioeconomic factor integration
 - Machine learning for crime prediction
+
+## Source Code
+
+The complete source code for this analysis is available on GitHub:
+[Crime Data Analysis Repository](https://github.com/Ahmad-Alam/Crime-Data-Analysis)
+
+Feel free to explore the code, suggest improvements, or use it for your own analysis. The repository contains all the necessary code and documentation to reproduce this analysis.
 
 ---
 

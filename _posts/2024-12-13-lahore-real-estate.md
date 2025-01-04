@@ -5,8 +5,6 @@ date: 2024-12-13
 description: How data science revealed hidden patterns in Lahore's rental market
 tags: data-science property-analysis pakistan
 categories: projects
-toc:
-  beginning: true
 related_papers: true
 bibliography: papers.bib
 ---
