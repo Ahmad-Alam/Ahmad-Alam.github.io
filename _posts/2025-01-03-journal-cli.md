@@ -5,6 +5,7 @@ date: 2025-01-03
 description: How I created a minimal, data-driven journaling system to overcome ADHD challenges and track personal growth
 tags: programming personal-project cli bash goals
 categories: projects
+related_posts: true
 ---
 
 As a data scientist with ADHD, I've always been fascinated by the idea of journaling. The thought of looking back on my past thoughts and experiences, understanding my patterns, and tracking my personal growth has always appealed to me. Yet, like many others with ADHD, the actual practice of consistent journaling felt like an insurmountable task – another item on the endless to-do list that would eventually be forgotten or procrastinated away.

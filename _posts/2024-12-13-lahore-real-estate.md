@@ -5,7 +5,7 @@ date: 2024-12-13
 description: How data science revealed hidden patterns in Lahore's rental market
 tags: data-science property-analysis pakistan
 categories: projects
-related_papers: true
+related_posts: true
 bibliography: papers.bib
 ---
 
@@ -69,7 +69,7 @@ As Lahore continues to grow and evolve, these patterns will likely shift. The ri
 
 The story of Lahore's real estate market is, in many ways, the story of Lahore itself – a city balancing tradition with transformation, family values with modern aspirations, and organic growth with planned development. For anyone interested in understanding urban development in South Asia, Lahore offers a fascinating case study of how housing markets adapt to and reflect social change.
 
-Note: This analysis was conducted using Python and pandas, examining a dataset of over 17,500 property listings across Lahore. All prices are in Pakistani Rupees (PKR). The geospatial analysis methodology was inspired by the work of Truong et al. {% cite TRUONG2020433 %}. For the complete technical analysis, including code and methodology, please visit the [project documentation](https://ahmad-alam.github.io/projects/lahore-property-analysis/)._
+Note: This analysis was conducted using Python and pandas, examining a dataset of over 17,500 property listings across Lahore. All prices are in Pakistani Rupees (PKR). The geospatial analysis methodology was inspired by the work of Truong et al. {% cite TRUONG2020433 %}. 
 
 ## References
 
