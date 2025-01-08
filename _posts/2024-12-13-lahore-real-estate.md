@@ -11,7 +11,7 @@ bibliography: papers.bib
 
 # Beyond the Numbers: Understanding Lahore's Real Estate Landscape
 
-The real estate market in Lahore tells a fascinating story of urban development, cultural preferences, and economic patterns. After diving deep into data from over 17,500 property listings, I've uncovered some surprising insights about Pakistan's second-largest city and its housing market. For those interested in the technical details of this analysis, including the complete code and methodology, you can find the detailed project documentation [here](https://ahmad-alam.github.io/projects/lahore-property-analysis/).
+The real estate market in Lahore tells a fascinating story of urban development, cultural preferences, and economic patterns. After diving deep into data from over 17,500 property listings, I've uncovered some surprising insights about Pakistan's second-largest city and its housing market.
 
 ## The Heart of Lahore's Housing Culture
 
