@@ -2,7 +2,7 @@
 layout: page
 title: Lahore Rental Market Analysis
 description: Interactive visualization of rental patterns in Pakistan's cultural capital
-img: assets/img/lahore-stock.jpg
+img: assets/img/projects/lahore-stock.jpg
 importance: 1
 category: work
 ---
