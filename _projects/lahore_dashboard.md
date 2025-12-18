@@ -4,7 +4,8 @@ title: Lahore Rental Market Analysis
 description: Interactive visualization of rental patterns in Pakistan's cultural capital
 img: assets/img/projects/lahore-stock.jpg
 importance: 1
-category: work
+category: fun
+github: https://github.com/Ahmad-Alam/lahore-rent-2022-eda
 ---
 
 The Lahore Rental Market Analysis Dashboard offers an interactive exploration of property rental patterns in Pakistan's cultural capital. Built using Tableau, this visualization tool combines geographical analysis with detailed property metrics to provide valuable insights.

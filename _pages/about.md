@@ -2,17 +2,17 @@
 layout: about
 title: about
 permalink: /
-subtitle: Create, Consume, Curate, Convert
+subtitle: Building intelligent systems that scale
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
-  
+
 news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-I'm a data scientist and Computer Science student at Punjab University Lahore, specializing in data analysis and visualization. With four years of Python experience and expertise in data analysis libraries, I transform complex datasets into actionable insights. My current focus includes analyzing social impact data and developing data-driven solutions.
+AI/ML Engineer with expertise in large language models, knowledge graph systems, and full-stack development. I build production AI systems including legal document analysis pipelines and e-commerce automation platforms, with a strong foundation in machine learning, computer vision, and API development.
 
-I combine systematic problem-solving with technical expertise in Python, statistical analysis, and data visualization to deliver meaningful results. Currently working on the HDX dataset analysis for Pakistan, I'm passionate about leveraging data science for impactful solutions while pursuing opportunities that combine technical innovation with practical applications.
+Currently at VaconAI, I work on AI-powered legal knowledge graph systems processing deposition transcripts using GPT-4 and Neo4j, hybrid entity resolution pipelines, and serverless inference deployments on Modal.com. My experience spans from developing end-to-end medical transport management systems to building inventory automation microservices with GCP integration.

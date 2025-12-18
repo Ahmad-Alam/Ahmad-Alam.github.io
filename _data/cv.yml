@@ -2,96 +2,99 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Muhammad Ahmad
+    - name: Title
+      value: AI/ML Engineer
+    - name: Location
+      value: Lahore, Punjab, Pakistan
+    - name: Email
+      value: m.ahmad567490@gmail.com
     - name: Languages
-      value: English, German
+      value: English, Urdu
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: B.S. Computer Science
+      institution: Punjab University College of Information Technology (PUCIT)
+      year: 2020 - 2024
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+        - Key Courses - Machine Learning, Computer Vision
 
-- title: Experience
+- title: Professional Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: AI/ML Engineer
+      institution: VaconAI
+      year: Sept 2025 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Developed AI-powered legal knowledge graph system processing deposition transcripts using GPT-4 and Neo4j, extracting 9 entity types and 35+ relationship types from unstructured legal text
+        - Engineered hybrid entity resolution pipeline combining normalization algorithms and LLM-based matching for intelligent cross-document deduplication with confidence scoring
+        - Implemented parallel async LLM processing with rate limiting achieving 15x performance improvement for batch operations handling 2,200+ lines of complex JSON transformation
+        - Architected multi-tenant Neo4j graph schema with case isolation and deployed serverless FastAPI inference pipeline on Modal.com with automatic scaling
+        - Built complete PayPal dispute automation system for e-commerce platform with webhook processing, integrated payment handling across multiple services
+        - Developed inventory comparison microservice from scratch with batch processing, GCP integration, and Streamlit UI for real-time inventory management serving multiple shops
+        - Integrated OpenAI APIs, Shopify APIs, and payment processing systems with comprehensive error handling, retry logic, and rate limiting for production stability
+    - title: Full Stack Developer
+      institution: Freelance
+      year: 2024 - Sept 2025
       description:
-        - Description 1.
-        - Description 2.
+        - Developed end-to-end medical transport management system (CETransport) for Colin Enterprises serving 500+ daily trips
+        - Built responsive React frontend with real-time trip tracking, interactive Google Maps integration, and mobile-optimized design
+        - Implemented FastAPI backend with automated SMS notifications using Twilio, CSV bulk import, and comprehensive reporting dashboard
+        - Designed client and employee management systems with advanced filtering, pagination, and bulk operations
+        - Delivered private production deployment for client's internal operations with invite-only access control
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Technical Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: <a href="https://github.com/Ahmad-Alam/GestuNova">GestuNova</a>
+      year: Sept 2023 - June 2024
+      description: Computer vision project - Linux-based application mapping hand gestures to system commands using MediaPipe's hand tracking capabilities. Created intuitive GUI for gesture customization and implemented system integration layer for command execution.
+    - title: Lahore Property Analysis
+      year: Nov 2024
+      description: Data science project - Developed data processing system for standardizing property metrics, created statistical and spatial analysis pipeline using Python, Matplotlib and Seaborn, implemented geocoding system for location-based market segmentation.
+    - title: UK Crime Data Analysis
+      year: Oct 2024
+      description: Big data project - Processed millions of street-level crime records across multiple UK counties using Apache Spark. Implemented SQL-based analysis pipelines and developed automated county mapping and jurisdiction standardization.
+    - title: Hotel Review Sentiment Analysis
+      year: Jan 2024 - Mar 2024
+      description: NLP project - Developed sentiment analysis pipeline using Python and NLTK for processing hotel reviews. Created word cloud visualizations for theme identification and generated granular ratings system for service aspects analysis.
+    - title: Chess Blunder Detection
+      year: Feb 2023 - Apr 2023
+      description: Python project - Built script for analyzing chess games using Stockfish engine integration. Implemented recursive algorithm for variation tree analysis and blunder detection with automated analysis file generation.
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
-
-- title: Academic Interests
+- title: Skills
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Languages
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Python (Advanced), C++, SQL
+    - title: ML/AI
       items:
-        - Description 1.
-        - Description 2.
+        - LangChain, OpenAI API, LLM Integration, TensorFlow, PyTorch, Scikit-learn, NLP
+    - title: Databases
+      items:
+        - Neo4j, MongoDB, Graph Databases, Cypher
+    - title: Computer Vision
+      items:
+        - MediaPipe, OpenCV
+    - title: Backend
+      items:
+        - FastAPI, Flask, RESTful APIs, Async Programming
+    - title: Data
+      items:
+        - Pandas, NumPy, Matplotlib, Seaborn
+    - title: Cloud/DevOps
+      items:
+        - Google Cloud Platform, Modal.com, Docker, Cloud Run, Cloud Scheduler
+    - title: Tools
+      items:
+        - Git, Linux, Streamlit
 
-- title: Other Interests
+- title: Activities
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - "Research Paper: Comparative Analysis of Hand Gesture Recognition Models (2024)"
+    - "Content Writer: FCIT Information and Media Society (FIMS) (2022)"
+    - "Participant: PUcon Coding Competition (2023), Rookie Game Jam (2023)"
