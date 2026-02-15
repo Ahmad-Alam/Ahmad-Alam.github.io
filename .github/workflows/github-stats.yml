@@ -1,0 +1,140 @@
+name: Generate GitHub Stats Cards
+
+on:
+  schedule:
+    - cron: "0 6 * * *" # daily at 06:00 UTC
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create output directory
+        run: mkdir -p assets/img/github-stats
+
+      # ── User stats cards ──
+      - name: Stats card – ahmad-alam (default)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: username=ahmad-alam&theme=default&show_icons=true
+          path: assets/img/github-stats/stats-ahmad-alam-default.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Stats card – ahmad-alam (dark)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: username=ahmad-alam&theme=dark&show_icons=true
+          path: assets/img/github-stats/stats-ahmad-alam-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── Pin cards ──
+      - name: Pin – GestuNova (default)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=ahmad-alam&repo=GestuNova&theme=default&show_owner=false&description_lines_count=2
+          path: assets/img/github-stats/pin-ahmad-alam-GestuNova-default.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pin – GestuNova (dark)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=ahmad-alam&repo=GestuNova&theme=dark&show_owner=false&description_lines_count=2
+          path: assets/img/github-stats/pin-ahmad-alam-GestuNova-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pin – retail-market-basket-analysis (default)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=ahmad-alam&repo=retail-market-basket-analysis&theme=default&show_owner=false&description_lines_count=2
+          path: assets/img/github-stats/pin-ahmad-alam-retail-market-basket-analysis-default.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pin – retail-market-basket-analysis (dark)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=ahmad-alam&repo=retail-market-basket-analysis&theme=dark&show_owner=false&description_lines_count=2
+          path: assets/img/github-stats/pin-ahmad-alam-retail-market-basket-analysis-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pin – lahore-rent-2022-eda (default)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=ahmad-alam&repo=lahore-rent-2022-eda&theme=default&show_owner=false&description_lines_count=2
+          path: assets/img/github-stats/pin-ahmad-alam-lahore-rent-2022-eda-default.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pin – lahore-rent-2022-eda (dark)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=ahmad-alam&repo=lahore-rent-2022-eda&theme=dark&show_owner=false&description_lines_count=2
+          path: assets/img/github-stats/pin-ahmad-alam-lahore-rent-2022-eda-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pin – Crime-Data-Analysis (default)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=ahmad-alam&repo=Crime-Data-Analysis&theme=default&show_owner=false&description_lines_count=2
+          path: assets/img/github-stats/pin-ahmad-alam-Crime-Data-Analysis-default.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pin – Crime-Data-Analysis (dark)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=ahmad-alam&repo=Crime-Data-Analysis&theme=dark&show_owner=false&description_lines_count=2
+          path: assets/img/github-stats/pin-ahmad-alam-Crime-Data-Analysis-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pin – HotelReviewAnalyzer (default)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=ahmad-alam&repo=HotelReviewAnalyzer&theme=default&show_owner=false&description_lines_count=2
+          path: assets/img/github-stats/pin-ahmad-alam-HotelReviewAnalyzer-default.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pin – HotelReviewAnalyzer (dark)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=ahmad-alam&repo=HotelReviewAnalyzer&theme=dark&show_owner=false&description_lines_count=2
+          path: assets/img/github-stats/pin-ahmad-alam-HotelReviewAnalyzer-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pin – Chess-Blunder-Detection (default)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=ahmad-alam&repo=Chess-Blunder-Detection&theme=default&show_owner=false&description_lines_count=2
+          path: assets/img/github-stats/pin-ahmad-alam-Chess-Blunder-Detection-default.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pin – Chess-Blunder-Detection (dark)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=ahmad-alam&repo=Chess-Blunder-Detection&theme=dark&show_owner=false&description_lines_count=2
+          path: assets/img/github-stats/pin-ahmad-alam-Chess-Blunder-Detection-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── Commit if changed ──
+      - name: Commit updated SVGs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/img/github-stats/
+          git diff --cached --quiet || (git commit -m "chore: update GitHub stats cards" && git push)
