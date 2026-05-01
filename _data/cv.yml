@@ -19,7 +19,7 @@
       institution: Punjab University College of Information Technology (PUCIT)
       year: 2020 - 2024
       description:
-        - Key Courses - Machine Learning, Computer Vision
+        - "Key Courses: Machine Learning, Data Structures, Database Systems, Statistics, Computer Vision"
 
 - title: Professional Experience
   type: time_table
@@ -28,73 +28,51 @@
       institution: VaconAI
       year: Sept 2025 - Present
       description:
-        - Developed AI-powered legal knowledge graph system processing deposition transcripts using GPT-4 and Neo4j, extracting 9 entity types and 35+ relationship types from unstructured legal text
-        - Engineered hybrid entity resolution pipeline combining normalization algorithms and LLM-based matching for intelligent cross-document deduplication with confidence scoring
-        - Implemented parallel async LLM processing with rate limiting achieving 15x performance improvement for batch operations handling 2,200+ lines of complex JSON transformation
-        - Architected multi-tenant Neo4j graph schema with case isolation and deployed serverless FastAPI inference pipeline on Modal.com with automatic scaling
-        - Built complete PayPal dispute automation system for e-commerce platform with webhook processing, integrated payment handling across multiple services
-        - Developed inventory comparison microservice from scratch with batch processing, GCP integration, and Streamlit UI for real-time inventory management serving multiple shops
-        - Integrated OpenAI APIs, Shopify APIs, and payment processing systems with comprehensive error handling, retry logic, and rate limiting for production stability
-    - title: Full Stack Developer
-      institution: Freelance
-      year: 2024 - Sept 2025
+        - Architected multi-agent autonomous development orchestrator across 5 iterations, coordinating 6 specialized LLM agents (researcher, architect, backend, frontend, tester, fixer) with full context passing; migrated from subprocess-based CLI to Claude Agent SDK, reducing codebase from 2,000+ lines to ~500 lines
+        - Designed intelligent decision loop using Claude Opus that dynamically routes tasks based on test results — spawns fixer agents on failure, re-runs tests until completion — eliminating manual debugging loops
+        - Built legal deposition knowledge graph system with triple-database architecture (Neo4j + Pinecone + MongoDB); LLM-powered extraction identifying 7 node types, 10+ relationship types with importance scoring, and async processing with semaphore-controlled concurrency
+        - Engineered adversarial content refinement system (creator-critic loop) — Claude Sonnet creates, Opus critiques with blind evaluation, 4-dimension scoring gate (avg ≥ 7.0 AND min ≥ 5.0), checkpoint/resume, and stall detection
+        - Implemented model cost optimization policy across all LLM systems — Opus for orchestration/architecture, Sonnet for implementation, Haiku for log condensation
+        - Optimized batch data processing pipeline achieving 15× performance improvement through parallel async operations and intelligent rate limiting
+        - Designed and deployed serverless ML inference pipeline on Modal.com with automatic scaling; built real-time inventory analytics dashboard (Streamlit + SQL aggregation) on GCP
+    - title: Software Developer
+      institution: Techomnis
+      year: June 2024 - Sept 2025
       description:
-        - Developed end-to-end medical transport management system (CETransport) for Colin Enterprises serving 500+ daily trips
-        - Built responsive React frontend with real-time trip tracking, interactive Google Maps integration, and mobile-optimized design
-        - Implemented FastAPI backend with automated SMS notifications using Twilio, CSV bulk import, and comprehensive reporting dashboard
-        - Designed client and employee management systems with advanced filtering, pagination, and bulk operations
-        - Delivered private production deployment for client's internal operations with invite-only access control
+        - Built full-stack medical transport management system processing 500+ daily trips with reporting dashboard, CSV bulk import pipeline with validation, automated analytics reporting, and data export workflows
+        - Developed entity resolution model combining rule-based normalization with ML-based matching for client data deduplication with confidence scoring metrics
+        - Implemented backend REST APIs with advanced filtering, pagination, and aggregation for client management; delivered private production deployment with invite-only access control
 
-- title: Technical Projects
+- title: Selected Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/Ahmad-Alam/GestuNova">GestuNova</a>
-      year: Sept 2023 - June 2024
-      description: Computer vision project - Linux-based application mapping hand gestures to system commands using MediaPipe's hand tracking capabilities. Created intuitive GUI for gesture customization and implemented system integration layer for command execution.
-    - title: Lahore Property Analysis
-      year: Nov 2024
-      description: Data science project - Developed data processing system for standardizing property metrics, created statistical and spatial analysis pipeline using Python, Matplotlib and Seaborn, implemented geocoding system for location-based market segmentation.
-    - title: UK Crime Data Analysis
-      year: Oct 2024
-      description: Big data project - Processed millions of street-level crime records across multiple UK counties using Apache Spark. Implemented SQL-based analysis pipelines and developed automated county mapping and jurisdiction standardization.
-    - title: Hotel Review Sentiment Analysis
-      year: Jan 2024 - Mar 2024
-      description: NLP project - Developed sentiment analysis pipeline using Python and NLTK for processing hotel reviews. Created word cloud visualizations for theme identification and generated granular ratings system for service aspects analysis.
-    - title: Chess Blunder Detection
-      year: Feb 2023 - Apr 2023
-      description: Python project - Built script for analyzing chess games using Stockfish engine integration. Implemented recursive algorithm for variation tree analysis and blunder detection with automated analysis file generation.
+    - title: IdeaRadar — Automated SaaS Opportunity Discovery
+      year: VaconAI
+      description: Scraped 5+ data sources (Reddit, Product Hunt, GitHub, 80K+ Kaggle job postings) with 5 parallel AI analysis strategies. 100-point scoring rubric (Validation 35, Market 25, Economics 20, Execution 20) with digital viability filtering; MD5-based batch caching for resumable multi-hour runs. Stack — Python, Claude API, Reddit/HN/GitHub/Kaggle APIs.
+    - title: RAG-MCP — Multi-Source Research MCP Server
+      year: VaconAI
+      description: Exposed 11 research tools to Claude Code (HN, Reddit, X/Twitter, YouTube, web search) with local-first caching strategy, dual JSON/markdown storage, and 3,900+ cached research files. YouTube transcript extraction via reverse-engineered InnerTube API. Stack — TypeScript, MCP SDK, Reddit/HN/X/YouTube OAuth.
 
 - title: Skills
   type: nested_list
   contents:
+    - title: AI/LLM
+      items:
+        - Claude API, Claude Agent SDK, Claude Code CLI, AWS Bedrock, OpenAI API, LangChain, MCP (Model Context Protocol), Multi-Agent Orchestration, RAG, Vector Search, Knowledge Graphs
     - title: Languages
       items:
-        - Python (Advanced), C++, SQL
-    - title: ML/AI
-      items:
-        - LangChain, OpenAI API, LLM Integration, TensorFlow, PyTorch, Scikit-learn, NLP
-    - title: Databases
-      items:
-        - Neo4j, MongoDB, Graph Databases, Cypher
-    - title: Computer Vision
-      items:
-        - MediaPipe, OpenCV
+        - Python (Advanced), TypeScript, SQL
     - title: Backend
       items:
-        - FastAPI, Flask, RESTful APIs, Async Programming
-    - title: Data
+        - FastAPI, asyncio, SQLAlchemy, PostgreSQL, SQLite, Neo4j, Pinecone, MongoDB
+    - title: Frontend
       items:
-        - Pandas, NumPy, Matplotlib, Seaborn
-    - title: Cloud/DevOps
+        - React, Next.js, Astro, Tailwind CSS, Radix UI, Remotion
+    - title: Infrastructure
       items:
-        - Google Cloud Platform, Modal.com, Docker, Cloud Run, Cloud Scheduler
-    - title: Tools
-      items:
-        - Git, Linux, Streamlit
+        - AWS (Bedrock, EC2, S3, App Runner, Amplify, RDS), Modal.com, Docker, Git, systemd
 
 - title: Activities
   type: list
   contents:
     - "<a href=\"https://drive.google.com/file/d/1KPqHPnV183_-JMPohbaqzri9-3McKhEw/view?usp=sharing\">Research Paper: Comparative Analysis of Hand Gesture Recognition Models (2024)</a>"
-    - "Content Writer: FCIT Information and Media Society (FIMS) (2022)"
-    - "Participant: PUcon Coding Competition (2023), Rookie Game Jam (2023)"

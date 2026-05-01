@@ -2,10 +2,12 @@
 layout: post
 title: Crime Data Analysis in England - A Tale of Three Counties
 date: 2025-01-04
-description: A comprehensive analysis of crime patterns across Derbyshire, Kent, and Leicestershire using Apache Spark and Python
+description: Processing millions of UK crime records with Apache Spark — SQL pipelines, county normalization, and trend visualizations across three counties.
+keywords: apache spark python, crime data analysis, big data python, PySpark SQL, data visualization, UK crime statistics, pandas matplotlib
 tags: data-analysis spark python visualization
 categories: projects
 related_posts: true
+sitemap: false
 mermaid:
   enabled: true
 chart:

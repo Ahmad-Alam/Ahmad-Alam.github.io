@@ -2,10 +2,12 @@
 layout: post
 title: Uncovering Lahore's Property Market Patterns 
 date: 2024-12-13
-description: How data science revealed hidden patterns in Lahore's rental market
+description: A data science project that used geocoding, spatial segmentation, and statistical analysis to find patterns in Lahore's rental market.
+keywords: data science python, property market analysis, Lahore real estate, matplotlib seaborn, geocoding python, spatial analysis, rental market patterns
 tags: data-science property-analysis pakistan
 categories: projects
 related_posts: true
+sitemap: false
 bibliography: papers.bib
 ---
 
