@@ -8,11 +8,11 @@ middle_name:
 last_name: Ahmad
 email: m.ahmad567490@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  AI/ML Engineer with expertise in LLMs, knowledge graphs, and full-stack development. Building production AI systems.
+  AI engineer building multi-agent systems, autonomous LLM runtimes, and AI-integrated products at VaconAI.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: ai-ml-engineer, machine-learning, llm, knowledge-graphs, full-stack-developer, python, neo4j # add your own keywords or leave empty
+keywords: ai-engineer, multi-agent-systems, llm-orchestration, claude-agent-sdk, aws-bedrock, mcp, knowledge-graphs, python, typescript, autonomous-ai
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 📊 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
