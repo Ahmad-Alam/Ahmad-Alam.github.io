@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1200" height="620" fill="#ffffff"/>
+
+  <!-- section labels -->
+  <text x="60" y="70" font-size="22" font-weight="700" fill="#2b2b2b">Autonomous</text>
+  <text x="900" y="70" font-size="22" font-weight="700" fill="#2b2b2b">Human-gated</text>
+
+  <!-- divider -->
+  <line x1="800" y1="40" x2="800" y2="560" stroke="#c9c9c9" stroke-width="2" stroke-dasharray="8 6"/>
+
+  <!-- Box 1: Discord -->
+  <rect x="60" y="240" width="200" height="120" rx="10" fill="#eef1f5" stroke="#8a94a3" stroke-width="2"/>
+  <text x="160" y="295" font-size="20" fill="#2b2b2b" text-anchor="middle">Discord</text>
+  <text x="160" y="320" font-size="14" fill="#666666" text-anchor="middle">cron trigger</text>
+  <text x="160" y="338" font-size="14" fill="#666666" text-anchor="middle">or message</text>
+
+  <!-- arrow 1 -->
+  <line x1="260" y1="300" x2="330" y2="300" stroke="#8a94a3" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Box 2: markdown rules -->
+  <rect x="330" y="220" width="220" height="160" rx="10" fill="#eef1f5" stroke="#8a94a3" stroke-width="2"/>
+  <text x="440" y="265" font-size="20" fill="#2b2b2b" text-anchor="middle">Claude reads</text>
+  <text x="440" y="290" font-size="20" fill="#2b2b2b" text-anchor="middle">markdown rules</text>
+  <text x="440" y="320" font-size="14" fill="#666666" text-anchor="middle">strategy · schedule</text>
+  <text x="440" y="340" font-size="14" fill="#666666" text-anchor="middle">quality criteria</text>
+  <text x="440" y="360" font-size="13" fill="#9a9a9a" text-anchor="middle">(bot can self-edit these)</text>
+
+  <!-- arrow 2 -->
+  <line x1="550" y1="300" x2="610" y2="300" stroke="#8a94a3" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Box 3: quality gate -->
+  <rect x="610" y="230" width="180" height="140" rx="10" fill="#eef1f5" stroke="#8a94a3" stroke-width="2"/>
+  <text x="700" y="280" font-size="20" fill="#2b2b2b" text-anchor="middle">Quality gate</text>
+  <text x="700" y="308" font-size="14" fill="#666666" text-anchor="middle">score 0 to 10</text>
+  <text x="700" y="328" font-size="14" fill="#666666" text-anchor="middle">ship · revise</text>
+  <text x="700" y="348" font-size="14" fill="#666666" text-anchor="middle">or scrap</text>
+
+  <!-- arrow 3 crossing divider -->
+  <line x1="790" y1="300" x2="855" y2="300" stroke="#8a94a3" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Box 4: human approval -->
+  <rect x="855" y="230" width="180" height="140" rx="10" fill="#fdf3e3" stroke="#c9a24a" stroke-width="2"/>
+  <text x="945" y="275" font-size="19" fill="#2b2b2b" text-anchor="middle">Human replies</text>
+  <text x="945" y="298" font-size="19" fill="#2b2b2b" text-anchor="middle">"approve"</text>
+  <text x="945" y="325" font-size="13" fill="#8a6d1f" text-anchor="middle">nothing publishes</text>
+  <text x="945" y="343" font-size="13" fill="#8a6d1f" text-anchor="middle">without this</text>
+
+  <!-- arrow 4 -->
+  <line x1="1035" y1="300" x2="1090" y2="300" stroke="#8a94a3" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Box 5: publish -->
+  <rect x="1090" y="255" width="90" height="90" rx="10" fill="#eef1f5" stroke="#8a94a3" stroke-width="2"/>
+  <text x="1135" y="305" font-size="16" fill="#2b2b2b" text-anchor="middle">Live</text>
+
+  <!-- caption line -->
+  <text x="600" y="470" font-size="16" fill="#4a4a4a" text-anchor="middle">Behavior lives in markdown, not code. Publishing always waits on a person.</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#8a94a3"/>
+    </marker>
+  </defs>
+</svg>

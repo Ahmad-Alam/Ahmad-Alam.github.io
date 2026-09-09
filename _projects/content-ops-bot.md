@@ -2,6 +2,7 @@
 layout: page
 title: Autonomous Content Operation Bot
 description: A self-scheduling content system that researches, drafts, and quality-scores blog posts and videos across 13 niches on its own, and never publishes anything without an explicit human approval
+img: assets/img/projects/content-ops-bot.svg
 importance: 1
 category: work
 ---
