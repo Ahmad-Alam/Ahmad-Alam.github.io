@@ -63,21 +63,28 @@ This pipeline generated new content for about two months, then went quiet for a 
 
 The successor system didn't just keep the content cadence going. Mid-May 2026 brought a coordinated rollout: every one of the thirteen sites got its own themed calculator tool, matched to its industry.
 
-| Site                 | Tool                         |
-| -------------------- | ---------------------------- |
-| academicaitrends.com | GPA calculator               |
-| creatoraidaily.com   | Creator earnings estimator   |
-| ecomaidaily.com      | Reseller fee calculator      |
-| fashionaidaily.com   | Clothing size converter      |
-| financeaidaily.com   | Compound interest calculator |
-| fitnessaitrends.com  | TDEE and macro calculator    |
-| focusaiguide.com     | Pomodoro timer               |
-| foodaidaily.com      | Recipe calculator            |
-| freelanceaidaily.com | Hourly rate calculator       |
-| healthaidaily.com    | Body composition calculator  |
-| hiringaiguide.com    | Job offer calculator         |
-| housingaitrends.com  | Rent vs. buy calculator      |
-| travelaidaily.com    | Trip budget calculator       |
+<div class="table-responsive">
+  <table class="table table-sm table-bordered">
+    <thead>
+      <tr><th>Site</th><th>Tool</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>academicaitrends.com</td><td>GPA calculator</td></tr>
+      <tr><td>creatoraidaily.com</td><td>Creator earnings estimator</td></tr>
+      <tr><td>ecomaidaily.com</td><td>Reseller fee calculator</td></tr>
+      <tr><td>fashionaidaily.com</td><td>Clothing size converter</td></tr>
+      <tr><td>financeaidaily.com</td><td>Compound interest calculator</td></tr>
+      <tr><td>fitnessaitrends.com</td><td>TDEE and macro calculator</td></tr>
+      <tr><td>focusaiguide.com</td><td>Pomodoro timer</td></tr>
+      <tr><td>foodaidaily.com</td><td>Recipe calculator</td></tr>
+      <tr><td>freelanceaidaily.com</td><td>Hourly rate calculator</td></tr>
+      <tr><td>healthaidaily.com</td><td>Body composition calculator</td></tr>
+      <tr><td>hiringaiguide.com</td><td>Job offer calculator</td></tr>
+      <tr><td>housingaitrends.com</td><td>Rent vs. buy calculator</td></tr>
+      <tr><td>travelaidaily.com</td><td>Trip budget calculator</td></tr>
+    </tbody>
+  </table>
+</div>
 
 Right behind the tools came a coordinated SEO pass across all thirteen sites in the same two-week window: tool schema, FAQ blocks, AI-overview answers, related-article links, sitemap and canonical URL fixes. In June, publishing picked up a "citability" rule: every article needs at least four distinct types of source, and Reddit citations follow their own stricter rules, a direct response to how these articles were actually getting cited (or not) once they were live. Two real bugs shipped and got caught in the same window: the reseller fee calculator's ROI figure had a denominator that excluded platform fees, understating the real cost, and the clothing size converter was off by one on IT band sizes and Japanese shoe sizes. Both got fixed within days. In July, a mismatch in where the article-generation prompt put its thumbnail suggestion caused four articles, across education, e-commerce, content creation, and healthcare, to publish with no image at all before the extraction logic got patched. Analytics and an email capture form went out network-wide on July 28, the point where the network started actually measuring the audience it had spent five months building.
 
