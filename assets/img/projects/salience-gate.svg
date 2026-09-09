@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1200" height="620" fill="#ffffff"/>
+
+  <!-- Box 1: mic/STT -->
+  <rect x="50" y="240" width="170" height="120" rx="10" fill="#eef1f5" stroke="#8a94a3" stroke-width="2"/>
+  <text x="135" y="295" font-size="19" fill="#2b2b2b" text-anchor="middle">mic → STT</text>
+  <text x="135" y="320" font-size="13" fill="#666666" text-anchor="middle">user utterance</text>
+  <text x="135" y="338" font-size="13" fill="#666666" text-anchor="middle">as text spans</text>
+
+  <!-- arrow 1 -->
+  <line x1="220" y1="300" x2="290" y2="300" stroke="#8a94a3" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Box 2: the gate, highlighted -->
+  <rect x="290" y="210" width="260" height="180" rx="10" fill="#fdf3e3" stroke="#c9a24a" stroke-width="2"/>
+  <text x="420" y="250" font-size="21" font-weight="700" fill="#2b2b2b" text-anchor="middle">Salience gate</text>
+  <text x="420" y="278" font-size="13" fill="#8a6d1f" text-anchor="middle">cross-encoder scores</text>
+  <text x="420" y="296" font-size="13" fill="#8a6d1f" text-anchor="middle">each span 0 to 1</text>
+  <text x="420" y="322" font-size="13" fill="#8a6d1f" text-anchor="middle">recall floor 0.975</text>
+  <text x="420" y="340" font-size="13" fill="#8a6d1f" text-anchor="middle">held first, always</text>
+  <text x="420" y="368" font-size="12" fill="#a3862f" text-anchor="middle">12.7ms per utterance</text>
+
+  <!-- arrow down: dropped -->
+  <line x1="420" y1="390" x2="420" y2="440" stroke="#b3b3b3" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arrow-grey)"/>
+  <text x="420" y="465" font-size="14" fill="#999999" text-anchor="middle">chitchat, dropped</text>
+  <text x="420" y="483" font-size="12" fill="#aaaaaa" text-anchor="middle">(kept in memory, not sent on)</text>
+
+  <!-- arrow 2: kept, to LLM -->
+  <line x1="550" y1="300" x2="620" y2="300" stroke="#8a94a3" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="585" y="285" font-size="12" fill="#666666" text-anchor="middle">kept</text>
+
+  <!-- Box 3: LLM -->
+  <rect x="620" y="240" width="170" height="120" rx="10" fill="#eef1f5" stroke="#8a94a3" stroke-width="2"/>
+  <text x="705" y="295" font-size="19" fill="#2b2b2b" text-anchor="middle">LLM</text>
+  <text x="705" y="320" font-size="13" fill="#666666" text-anchor="middle">task-relevant</text>
+  <text x="705" y="338" font-size="13" fill="#666666" text-anchor="middle">context only</text>
+
+  <!-- arrow 3 -->
+  <line x1="790" y1="300" x2="860" y2="300" stroke="#8a94a3" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Box 4: TTS -->
+  <rect x="860" y="240" width="170" height="120" rx="10" fill="#eef1f5" stroke="#8a94a3" stroke-width="2"/>
+  <text x="945" y="295" font-size="19" fill="#2b2b2b" text-anchor="middle">TTS</text>
+  <text x="945" y="320" font-size="13" fill="#666666" text-anchor="middle">spoken reply</text>
+
+  <!-- caption -->
+  <text x="600" y="560" font-size="16" fill="#4a4a4a" text-anchor="middle">Eleven experiment tracks, one honest negative result, and a metric that never trades away recall.</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#8a94a3"/>
+    </marker>
+    <marker id="arrow-grey" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#b3b3b3"/>
+    </marker>
+  </defs>
+</svg>
