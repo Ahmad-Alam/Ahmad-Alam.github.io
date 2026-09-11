@@ -1,0 +1,39 @@
+---
+---
+<div class="row">
+  <div id="{{ entry.key }}" class="col-sm-10">
+    <!-- Title -->
+    <div class="title">{{ entry.title }}</div>
+    
+    <!-- Author -->
+    <div class="author">
+      {% for author in entry.author_array %}
+        {%- if forloop.length > 1 -%}
+          {% if forloop.first == false %}, {% endif %}
+          {%- if forloop.last %}and {% endif -%}
+        {% endif %}
+        {{- author.first }} {{ author.last -}}
+      {% endfor %}
+    </div>
+
+    <!-- Journal/Book title and date -->
+    <div class="periodical">
+      <em>{{ entry.journal }}</em>, {{ entry.year }}
+    </div>
+    {% if entry.note %}
+    <div class="periodical">
+      {{ entry.note }}
+    </div>
+    {% endif %}
+
+    <!-- Links -->
+    <div class="links">
+      {% if entry.doi %}
+        <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
+      {% endif %}
+      {% if entry.url %}
+        <a href="{{ entry.url }}" class="btn btn-sm z-depth-0" role="button">URL</a>
+      {% endif %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,89 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Muhammad Ahmad
+    - name: Title
+      value: AI/ML Engineer
+    - name: Location
+      value: Lahore, Punjab, Pakistan
+    - name: Email
+      value: m.ahmad567490@gmail.com
+    - name: Phone
+      value: +92 332 7835625
+    - name: Languages
+      value: English, Urdu
+
+- title: Education
+  type: time_table
+  contents:
+    - title: B.S. Computer Science
+      institution: Punjab University College of Information Technology (PUCIT)
+      year: 2020 - 2024
+      description:
+        - "Key Courses: Machine Learning, Data Structures, Database Systems, Statistics, Computer Vision"
+
+- title: Professional Experience
+  type: time_table
+  contents:
+    - title: AI/ML Engineer, Contract
+      institution: VaconAI
+      year: Sept 2025 - Aug 2026
+      description:
+        - Built a knowledge-graph service spanning three databases (Neo4j, MongoDB, Pinecone; 6 node types, 15 relationship types) that converts legal deposition transcripts into queryable contradiction and admission graphs in under 2 minutes end to end
+        - Automated PayPal dispute resolution for an e-commerce payments platform with a 10-agent LLM routing system and a 4-tier offer-escalation ladder, replacing manual case handling with a bounded, trackable negotiation flow
+        - Designed and shipped a small-talk filter for voice agents, running an 11-track ML experimentation process from a baseline logistic-regression model through to a distilled cross-encoder
+        - Reached 100% task recall and 92.9% chitchat rejection at 12.7ms inference latency, meeting a strict recall-floor constraint required for production voice-agent deployment
+    - title: Software Developer
+      institution: Arbisoft
+      year: July 2024 - June 2025
+      description:
+        - Built a six-phase autonomous content pipeline (keyword research, pillar/cluster mapping, live-ranking content briefs, generation, on-page optimization) orchestrated through the Claude Code CLI in headless mode, publishing 364+ verified-live articles across 13 sites
+        - Replaced two separate hardcoded Python systems (research/drafting and video rendering) with a single Discord-controlled agent that reads its own operating rules from markdown files instead of code, turning most new requirements into a documentation edit instead of a deploy
+        - Built a quality-scoring gate (numeric threshold plus a banned-phrase filter for AI-sounding language) that ships strong drafts automatically, revises borderline ones, and discards weak ones, behind a hard human-approval step before anything publishes
+        - Shipped 364+ articles and drove 14,000+ views across five YouTube channels over five months of unattended operation, with retry logic that carried the pipeline through transient failures and resumed automatically after usage-cap resets
+    - title: Software Developer
+      institution: Techomnis
+      year: Feb 2023 - Nov 2023
+      description:
+        - Built the core of a medical transport management system handling 500+ daily trips, covering trip scheduling, status tracking, and client record management
+        - Added a reporting dashboard and data-export tooling on top of the trip-management system, giving staff visibility into daily and historical operations
+        - Built a CSV bulk-import pipeline with validation for onboarding client and trip data, replacing manual row-by-row entry
+        - Implemented backend APIs with advanced filtering, pagination, and aggregation for client management, and delivered a private production deployment with invite-only access control
+
+- title: Selected Projects
+  type: time_table
+  contents:
+    - title: IdeaRadar — Automated SaaS Opportunity Discovery
+      year: VaconAI
+      description: Scraped 5+ data sources (Reddit, Product Hunt, GitHub, 80K+ Kaggle job postings) with 5 parallel AI analysis strategies. 100-point scoring rubric (Validation 35, Market 25, Economics 20, Execution 20) with digital viability filtering; MD5-based batch caching for resumable multi-hour runs. Stack — Python, Claude API, Reddit/HN/GitHub/Kaggle APIs.
+    - title: RAG-MCP — Multi-Source Research MCP Server
+      year: VaconAI
+      description: Exposed 11 research tools to Claude Code (HN, Reddit, X/Twitter, YouTube, web search) with local-first caching strategy, dual JSON/markdown storage, and 3,900+ cached research files. YouTube transcript extraction via reverse-engineered InnerTube API. Stack — TypeScript, MCP SDK, Reddit/HN/X/YouTube OAuth.
+
+- title: Skills
+  type: nested_list
+  contents:
+    - title: Languages
+      items:
+        - Python, TypeScript, SQL, C++
+    - title: AI/ML & Agents
+      items:
+        - OpenAI Agents SDK, LLM Orchestration, RAG, MCP, PyTorch, Scikit-learn, LoRA Fine-Tuning, Cross-Encoder/SetFit Distillation, NLP
+    - title: Backend & Infra
+      items:
+        - FastAPI, Flask, Docker, Modal, AWS, Google Cloud Platform, Async/Concurrent Processing
+    - title: Data & Storage
+      items:
+        - Neo4j, MongoDB, Pinecone, PostgreSQL, SQLite FTS5, Apache Spark
+    - title: Real-Time & Voice
+      items:
+        - Pipecat, LiveKit, WebRTC, Twilio, Deepgram, Whisper
+    - title: Tools
+      items:
+        - Git, Linux, CI/CD, Streamlit
+
+- title: Activities
+  type: list
+  contents:
+    - "<a href=\"https://drive.google.com/file/d/1KPqHPnV183_-JMPohbaqzri9-3McKhEw/view?usp=sharing\">Research Paper: Comparative Analysis of Hand Gesture Recognition Models (2024)</a>"
