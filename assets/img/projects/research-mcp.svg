@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1200" height="680" fill="#ffffff"/>
+
+  <!-- Box A: Claude Code client -->
+  <rect x="475" y="30" width="250" height="80" rx="10" fill="#eef1f5" stroke="#8a94a3" stroke-width="2"/>
+  <text x="600" y="65" font-size="19" fill="#2b2b2b" text-anchor="middle">Claude Code</text>
+  <text x="600" y="88" font-size="13" fill="#666666" text-anchor="middle">composes its own queries</text>
+
+  <!-- arrow A to B -->
+  <line x1="600" y1="110" x2="600" y2="160" stroke="#8a94a3" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="640" y="140" font-size="12" fill="#666666" text-anchor="middle">stdio / MCP</text>
+
+  <!-- Box B: MCP tool layer -->
+  <rect x="325" y="160" width="550" height="90" rx="10" fill="#eef1f5" stroke="#8a94a3" stroke-width="2"/>
+  <text x="600" y="198" font-size="19" fill="#2b2b2b" text-anchor="middle">MCP tool layer — 17 tools</text>
+  <text x="600" y="222" font-size="13" fill="#666666" text-anchor="middle">zod schemas in, one text block out, no shared retry logic</text>
+
+  <!-- arrow B to C (left, highlighted) -->
+  <line x1="470" y1="250" x2="330" y2="320" stroke="#c9a24a" stroke-width="2" marker-end="url(#arrow-gold)"/>
+  <text x="360" y="278" font-size="13" fill="#8a6d1f" text-anchor="middle">check first</text>
+
+  <!-- arrow B to D (right) -->
+  <line x1="730" y1="250" x2="870" y2="320" stroke="#8a94a3" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="850" y="278" font-size="13" fill="#666666" text-anchor="middle">only if local is empty</text>
+
+  <!-- Box C: local store, highlighted -->
+  <rect x="90" y="320" width="430" height="200" rx="10" fill="#fdf3e3" stroke="#c9a24a" stroke-width="2"/>
+  <text x="305" y="358" font-size="20" font-weight="700" fill="#2b2b2b" text-anchor="middle">Local store &amp; corpus</text>
+  <text x="305" y="386" font-size="13" fill="#8a6d1f" text-anchor="middle">search_local · search_transcripts</text>
+  <text x="305" y="408" font-size="13" fill="#8a6d1f" text-anchor="middle">SQLite FTS5, 8,432 chunks</text>
+  <text x="305" y="430" font-size="13" fill="#8a6d1f" text-anchor="middle">457 episodes, 20 channels</text>
+  <text x="305" y="452" font-size="13" fill="#8a6d1f" text-anchor="middle">saved research results, JSON + markdown</text>
+  <text x="305" y="484" font-size="14" font-weight="700" fill="#a3862f" text-anchor="middle">zero network calls, zero cost</text>
+
+  <!-- Box D: adapters -->
+  <rect x="680" y="320" width="430" height="200" rx="10" fill="#eef1f5" stroke="#8a94a3" stroke-width="2"/>
+  <text x="895" y="358" font-size="20" font-weight="700" fill="#2b2b2b" text-anchor="middle">9 source adapters</text>
+  <text x="895" y="386" font-size="13" fill="#666666" text-anchor="middle">HN · Reddit · X · YouTube</text>
+  <text x="895" y="408" font-size="13" fill="#666666" text-anchor="middle">web search · Product Hunt</text>
+  <text x="895" y="430" font-size="13" fill="#666666" text-anchor="middle">App Store · Play · AlternativeTo</text>
+  <text x="895" y="452" font-size="13" fill="#666666" text-anchor="middle">one thin module per source</text>
+  <text x="895" y="484" font-size="14" font-weight="700" fill="#555555" text-anchor="middle">rate-limited, and one costs real money</text>
+
+  <!-- write-back loop, D to C -->
+  <path d="M680,470 C 560,560 400,560 320,522" fill="none" stroke="#b3b3b3" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arrow-grey)"/>
+  <text x="500" y="565" font-size="13" fill="#999999" text-anchor="middle">save_results — free the next time it's asked</text>
+
+  <!-- caption -->
+  <text x="600" y="625" font-size="16" fill="#4a4a4a" text-anchor="middle">17 tools, 9 sources, and an offline corpus checked before any paid call gets made.</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#8a94a3"/>
+    </marker>
+    <marker id="arrow-grey" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#b3b3b3"/>
+    </marker>
+    <marker id="arrow-gold" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#c9a24a"/>
+    </marker>
+  </defs>
+</svg>
