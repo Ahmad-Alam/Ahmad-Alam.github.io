@@ -1,0 +1,12 @@
+github_users:
+  - ahmad-alam
+
+repo_description_lines_max: 2
+
+github_repos:
+  - ahmad-alam/GestuNova
+  - ahmad-alam/retail-market-basket-analysis
+  - ahmad-alam/lahore-rent-2022-eda
+  - ahmad-alam/Crime-Data-Analysis
+  - ahmad-alam/HotelReviewAnalyzer
+  - ahmad-alam/Chess-Blunder-Detection

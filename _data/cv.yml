@@ -1,0 +1,88 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Muhammad Ahmad
+    - name: Title
+      value: AI Engineer
+    - name: Location
+      value: Lahore, Punjab, Pakistan
+    - name: Email
+      value: m.ahmad567490@gmail.com
+    - name: Phone
+      value: +92 332 7835625
+    - name: Languages
+      value: English, Urdu
+
+- title: Education
+  type: time_table
+  contents:
+    - title: B.S. Computer Science
+      institution: Punjab University College of Information Technology (PUCIT)
+      year: 2020 - 2024
+      description:
+        - "Key Courses: Machine Learning, Data Structures, Database Systems, Statistics, Computer Vision"
+
+- title: Professional Experience
+  type: time_table
+  contents:
+    - title: AI Engineer, Full-time
+      institution: VaconAI
+      year: Sept 2025 - Aug 2026
+      description:
+        - Designed and shipped 7+ production AI/ML systems end to end across a multi-client engineering practice, owning architecture, implementation, and deployment from spec to production
+        - Built a knowledge-graph service spanning three databases (Neo4j, MongoDB, Pinecone; 6 node types, 15 relationship types) that converts legal deposition transcripts into queryable contradiction and admission graphs in under 2 minutes end to end
+        - "Designed a two-stage extraction pipeline for the graph: deterministic parsing generates 200–300 nodes per transcript at zero LLM cost, then a concurrency-capped LLM pass adds 70–150 relationship nodes"
+        - Automated dispute resolution for an e-commerce payments platform with a 10-agent LLM routing system and a 4-tier offer-escalation ladder, replacing manual case handling with a bounded, trackable negotiation flow
+        - "Built automatic evidence pre-collection with a 3-tier order-lookup fallback (custom field → invoice ID → storefront search), staging dispute-specific evidence before any agent call runs"
+        - Built a real-time "co-counsel" feature streaming live transcription over WebSocket with a lease-based failover worker pool, and a 6-language automated return-processing pipeline for a customer-support platform
+        - Built a production real-time voice agent with swappable local/cloud STT and TTS backends, reaching 0.7–1.0s voice-to-voice latency (vs. 2.4s all-local); extended to live phone calls via Twilio and a browser softphone
+        - Built a six-phase autonomous content pipeline (keyword research, pillar/cluster mapping, content briefs, generation, on-page optimization) via Claude Code CLI in headless mode, then evolved it into a 24/7 self-operating system across 13 sites and 16 industries with a human-approval gate; published 364+ verified-live articles, growing organic search impressions 24% week over week
+        - Built an MCP server exposing 17 tools across 9 research sources (Hacker News, Reddit, X, YouTube) with an offline-first cache of 8,400+ indexed transcripts
+        - "Engineered a resilient transcript-ingestion pipeline across 20 YouTube channels (1,000 candidates → 457 corpus chunks) with adaptive backoff"
+    - title: Software Developer, Full-time
+      institution: Techomnis
+      year: 2024 - Sept 2025
+      description:
+        - Built a medical transport management system processing 500+ daily trips, with a reporting dashboard, data exports, and a CSV bulk-import pipeline with validation
+        - Implemented backend APIs with advanced filtering, pagination, and aggregation for client management; delivered a private production deployment with invite-only access control
+
+- title: Selected Projects
+  type: time_table
+  contents:
+    - title: Legal Deposition Knowledge Graph Service
+      year: VaconAI
+      description: Knowledge-graph service spanning three databases (Neo4j, MongoDB, Pinecone) that converts legal deposition transcripts into queryable contradiction and admission graphs in under 2 minutes end to end. A two-stage extraction pipeline generates 200–300 nodes per transcript via deterministic parsing at zero LLM cost, then a concurrency-capped LLM pass adds 70–150 relationship nodes across 6 node types and 15 relationship types. Stack — Python, Neo4j, MongoDB, Pinecone, LLM APIs.
+    - title: Automated PayPal Dispute Resolution Agent
+      year: VaconAI
+      description: 10-agent LLM routing system with a 4-tier offer-escalation ladder automating dispute resolution for an e-commerce payments platform, replacing manual case handling with a bounded, trackable negotiation flow. Automatic evidence pre-collection via a 3-tier order-lookup fallback stages dispute-specific evidence before any agent call runs. Stack — Python, FastAPI, OpenAI Agents SDK, PayPal/Gorgias APIs.
+    - title: Real-Time Voice Agent Pipeline
+      year: VaconAI
+      description: Production real-time voice agent with swappable local/cloud STT and TTS backends, reaching 0.7–1.0s voice-to-voice latency versus 2.4s all-local. Benchmarked Pipecat against LiveKit and multiple STT/TTS backends before extending the pipeline to live phone calls via Twilio and a browser softphone. Stack — Pipecat, LiveKit, Twilio, Deepgram, Whisper.
+
+- title: Skills
+  type: nested_list
+  contents:
+    - title: Languages
+      items:
+        - Python, TypeScript, SQL, C++
+    - title: AI/ML & Agents
+      items:
+        - OpenAI Agents SDK, LLM Orchestration, RAG, MCP, PyTorch, Scikit-learn, LoRA Fine-Tuning, Cross-Encoder/SetFit Distillation, NLP
+    - title: Backend & Infra
+      items:
+        - FastAPI, Flask, Docker, Modal, AWS, Google Cloud Platform, Async/Concurrent Processing
+    - title: Data & Storage
+      items:
+        - Neo4j, MongoDB, Pinecone, PostgreSQL, SQLite FTS5, Apache Spark
+    - title: Real-Time & Voice
+      items:
+        - Pipecat, LiveKit, WebRTC, Twilio, Deepgram, Whisper
+    - title: Tools
+      items:
+        - Git, Linux, CI/CD, Streamlit
+
+- title: Activities
+  type: list
+  contents:
+    - "<a href=\"https://drive.google.com/file/d/1KPqHPnV183_-JMPohbaqzri9-3McKhEw/view?usp=sharing\">Research Paper: Comparative Analysis of Hand Gesture Recognition Models (2024)</a>"
