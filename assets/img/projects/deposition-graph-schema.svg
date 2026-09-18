@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1200" height="620" fill="#ffffff"/>
+
+  <defs>
+    <marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#8a94a3"/>
+    </marker>
+  </defs>
+
+  <!-- relationship lines drawn first, under the boxes -->
+  <line x1="220" y1="165" x2="520" y2="285" stroke="#8a94a3" stroke-width="2" marker-end="url(#arrow2)"/>
+  <text x="330" y="220" font-size="12" fill="#666666" text-anchor="middle">MADE_BY</text>
+
+  <line x1="220" y1="450" x2="520" y2="335" stroke="#8a94a3" stroke-width="2" marker-end="url(#arrow2)"/>
+  <text x="330" y="410" font-size="12" fill="#666666" text-anchor="middle">CONTRADICTS_SELF</text>
+
+  <line x1="330" y1="125" x2="900" y2="125" stroke="#8a94a3" stroke-width="2" marker-end="url(#arrow2)"/>
+  <text x="615" y="112" font-size="12" fill="#666666" text-anchor="middle">REGARDING</text>
+
+  <line x1="980" y1="450" x2="700" y2="335" stroke="#8a94a3" stroke-width="2" marker-end="url(#arrow2)"/>
+  <text x="870" y="410" font-size="12" fill="#666666" text-anchor="middle">INVOLVES</text>
+
+  <line x1="600" y1="450" x2="270" y2="170" stroke="#8a94a3" stroke-width="2" marker-end="url(#arrow2)"/>
+  <text x="500" y="330" font-size="12" fill="#666666" text-anchor="middle">SUPPORTS</text>
+
+  <!-- ADMISSION -->
+  <rect x="60" y="80" width="220" height="90" rx="10" fill="#fdf3e3" stroke="#c9a24a" stroke-width="2"/>
+  <text x="170" y="118" font-size="17" font-weight="700" fill="#2b2b2b" text-anchor="middle">ADMISSION</text>
+  <text x="170" y="140" font-size="12" fill="#8a6d1f" text-anchor="middle">question, answer, reason,</text>
+  <text x="170" y="156" font-size="12" fill="#8a6d1f" text-anchor="middle">page and line reference</text>
+
+  <!-- TOPIC -->
+  <rect x="900" y="80" width="220" height="90" rx="10" fill="#e3f3e9" stroke="#4fae7a" stroke-width="2"/>
+  <text x="1010" y="118" font-size="17" font-weight="700" fill="#2b2b2b" text-anchor="middle">TOPIC</text>
+  <text x="1010" y="140" font-size="12" fill="#3d8a63" text-anchor="middle">parent and child topics,</text>
+  <text x="1010" y="156" font-size="12" fill="#3d8a63" text-anchor="middle">30-ish per deposition</text>
+
+  <!-- ENTITY, center -->
+  <rect x="500" y="265" width="200" height="90" rx="10" fill="#e3ecfa" stroke="#5a86c9" stroke-width="2"/>
+  <text x="600" y="300" font-size="17" font-weight="700" fill="#2b2b2b" text-anchor="middle">ENTITY</text>
+  <text x="600" y="322" font-size="12" fill="#3f5f96" text-anchor="middle">person, place, org,</text>
+  <text x="600" y="338" font-size="12" fill="#3f5f96" text-anchor="middle">medication, other</text>
+
+  <!-- CONTRADICTION -->
+  <rect x="60" y="450" width="220" height="90" rx="10" fill="#fbe4e4" stroke="#d97a7a" stroke-width="2"/>
+  <text x="170" y="488" font-size="17" font-weight="700" fill="#2b2b2b" text-anchor="middle">CONTRADICTION</text>
+  <text x="170" y="510" font-size="12" fill="#b25555" text-anchor="middle">initial answer vs.</text>
+  <text x="170" y="526" font-size="12" fill="#b25555" text-anchor="middle">contradictory responses</text>
+
+  <!-- TIMELINE -->
+  <rect x="900" y="450" width="220" height="90" rx="10" fill="#eef1f5" stroke="#8a94a3" stroke-width="2"/>
+  <text x="1010" y="488" font-size="17" font-weight="700" fill="#2b2b2b" text-anchor="middle">TIMELINE</text>
+  <text x="1010" y="510" font-size="12" fill="#666666" text-anchor="middle">dated events, chained</text>
+  <text x="1010" y="526" font-size="12" fill="#666666" text-anchor="middle">HAPPENED_BEFORE</text>
+
+  <!-- EXHIBIT -->
+  <rect x="500" y="450" width="200" height="90" rx="10" fill="#eef1f5" stroke="#8a94a3" stroke-width="2"/>
+  <text x="600" y="488" font-size="17" font-weight="700" fill="#2b2b2b" text-anchor="middle">EXHIBIT</text>
+  <text x="600" y="510" font-size="12" fill="#666666" text-anchor="middle">numbered documents</text>
+  <text x="600" y="526" font-size="12" fill="#666666" text-anchor="middle">with page references</text>
+
+  <!-- caption -->
+  <text x="600" y="590" font-size="16" fill="#4a4a4a" text-anchor="middle">Six node types, fifteen typed relationships, all scoped to case and deposition.</text>
+</svg>

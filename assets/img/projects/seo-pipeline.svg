@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1200" height="620" fill="#ffffff"/>
+
+  <!-- section label -->
+  <text x="60" y="70" font-size="22" font-weight="700" fill="#2b2b2b">Six phases, one shell command</text>
+
+  <!-- Box 1: keyword research -->
+  <rect x="40" y="240" width="190" height="140" rx="10" fill="#eef1f5" stroke="#8a94a3" stroke-width="2"/>
+  <text x="135" y="295" font-size="18" fill="#2b2b2b" text-anchor="middle">Keyword</text>
+  <text x="135" y="317" font-size="18" fill="#2b2b2b" text-anchor="middle">research</text>
+  <text x="135" y="345" font-size="13" fill="#666666" text-anchor="middle">volume · difficulty</text>
+  <text x="135" y="363" font-size="13" fill="#666666" text-anchor="middle">intent filter</text>
+
+  <line x1="230" y1="310" x2="270" y2="310" stroke="#8a94a3" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Box 2: cluster mapping -->
+  <rect x="270" y="240" width="190" height="140" rx="10" fill="#eef1f5" stroke="#8a94a3" stroke-width="2"/>
+  <text x="365" y="295" font-size="18" fill="#2b2b2b" text-anchor="middle">Cluster</text>
+  <text x="365" y="317" font-size="18" fill="#2b2b2b" text-anchor="middle">mapping</text>
+  <text x="365" y="345" font-size="13" fill="#666666" text-anchor="middle">pillar + internal</text>
+  <text x="365" y="363" font-size="13" fill="#666666" text-anchor="middle">link plan</text>
+
+  <line x1="460" y1="310" x2="500" y2="310" stroke="#8a94a3" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Box 3: brief + article -->
+  <rect x="500" y="240" width="200" height="140" rx="10" fill="#eef1f5" stroke="#8a94a3" stroke-width="2"/>
+  <text x="600" y="285" font-size="18" fill="#2b2b2b" text-anchor="middle">Brief, then</text>
+  <text x="600" y="307" font-size="18" fill="#2b2b2b" text-anchor="middle">article</text>
+  <text x="600" y="335" font-size="13" fill="#666666" text-anchor="middle">Claude writes JSON</text>
+  <text x="600" y="353" font-size="13" fill="#666666" text-anchor="middle">straight to a file</text>
+
+  <line x1="700" y1="310" x2="740" y2="310" stroke="#8a94a3" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Box 4: on-page optimization -->
+  <rect x="740" y="240" width="190" height="140" rx="10" fill="#eef1f5" stroke="#8a94a3" stroke-width="2"/>
+  <text x="835" y="295" font-size="18" fill="#2b2b2b" text-anchor="middle">On-page</text>
+  <text x="835" y="317" font-size="18" fill="#2b2b2b" text-anchor="middle">optimization</text>
+  <text x="835" y="345" font-size="13" fill="#666666" text-anchor="middle">meta, schema,</text>
+  <text x="835" y="363" font-size="13" fill="#666666" text-anchor="middle">quality checklist</text>
+
+  <line x1="930" y1="310" x2="970" y2="310" stroke="#8a94a3" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Box 5: publish -->
+  <rect x="970" y="230" width="190" height="160" rx="10" fill="#fdf3e3" stroke="#c9a24a" stroke-width="2"/>
+  <text x="1065" y="278" font-size="18" fill="#2b2b2b" text-anchor="middle">Publish</text>
+  <text x="1065" y="305" font-size="13" fill="#8a6d1f" text-anchor="middle">thumbnail generated,</text>
+  <text x="1065" y="323" font-size="13" fill="#8a6d1f" text-anchor="middle">indexing API pinged,</text>
+  <text x="1065" y="341" font-size="13" fill="#8a6d1f" text-anchor="middle">sheet row logged</text>
+
+  <!-- caption line -->
+  <text x="600" y="470" font-size="16" fill="#4a4a4a" text-anchor="middle">16 industries configured, 13 shipped a live site. No manual step from keyword to published page.</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#8a94a3"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://Ahmad-Alam.github.io/sitemap.xml
