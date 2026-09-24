@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1200" height="620" fill="#ffffff"/>
+
+  <!-- Box: transcript in -->
+  <rect x="40" y="245" width="170" height="110" rx="10" fill="#eef1f5" stroke="#8a94a3" stroke-width="2"/>
+  <text x="125" y="290" font-size="18" fill="#2b2b2b" text-anchor="middle">Deposition</text>
+  <text x="125" y="312" font-size="18" fill="#2b2b2b" text-anchor="middle">transcript</text>
+  <text x="125" y="336" font-size="12" fill="#666666" text-anchor="middle">arrives as JSON</text>
+
+  <!-- arrow to stage 1 -->
+  <line x1="210" y1="260" x2="270" y2="200" stroke="#8a94a3" stroke-width="2" marker-end="url(#arrow)"/>
+  <!-- arrow to stage 2 -->
+  <line x1="210" y1="340" x2="270" y2="400" stroke="#8a94a3" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Box: stage 1 rule-based -->
+  <rect x="270" y="110" width="240" height="140" rx="10" fill="#eef1f5" stroke="#8a94a3" stroke-width="2"/>
+  <text x="390" y="145" font-size="17" font-weight="700" fill="#2b2b2b" text-anchor="middle">Stage 1: parse</text>
+  <text x="390" y="167" font-size="12" fill="#666666" text-anchor="middle">deterministic, zero LLM cost</text>
+  <text x="390" y="190" font-size="12" fill="#666666" text-anchor="middle">admissions, contradictions,</text>
+  <text x="390" y="208" font-size="12" fill="#666666" text-anchor="middle">timeline, exhibits, topics</text>
+  <text x="390" y="232" font-size="12" fill="#8a94a3" text-anchor="middle">~200 to 300 nodes</text>
+
+  <!-- Box: stage 2 LLM -->
+  <rect x="270" y="400" width="240" height="140" rx="10" fill="#fdf3e3" stroke="#c9a24a" stroke-width="2"/>
+  <text x="390" y="435" font-size="17" font-weight="700" fill="#2b2b2b" text-anchor="middle">Stage 2: extract</text>
+  <text x="390" y="457" font-size="12" fill="#8a6d1f" text-anchor="middle">LLM, 5 concurrent calls</text>
+  <text x="390" y="480" font-size="12" fill="#8a6d1f" text-anchor="middle">entities, relationships,</text>
+  <text x="390" y="498" font-size="12" fill="#8a6d1f" text-anchor="middle">topic matching</text>
+  <text x="390" y="522" font-size="12" fill="#a3862f" text-anchor="middle">~70 to 150 more</text>
+
+  <!-- arrows into triad -->
+  <line x1="510" y1="180" x2="590" y2="270" stroke="#8a94a3" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="510" y1="470" x2="590" y2="360" stroke="#8a94a3" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Box: UUID triad -->
+  <rect x="590" y="255" width="230" height="110" rx="10" fill="#eef1f5" stroke="#8a94a3" stroke-width="2"/>
+  <text x="705" y="290" font-size="16" font-weight="700" fill="#2b2b2b" text-anchor="middle">UUID triad</text>
+  <text x="705" y="312" font-size="12" fill="#666666" text-anchor="middle">kgNodeId, neo4jNodeId,</text>
+  <text x="705" y="330" font-size="12" fill="#666666" text-anchor="middle">pineconeId, one per node</text>
+  <text x="705" y="352" font-size="11" fill="#8a94a3" text-anchor="middle">generated before any write</text>
+
+  <!-- arrows fanning out to 3 stores -->
+  <line x1="820" y1="280" x2="900" y2="190" stroke="#8a94a3" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="820" y1="310" x2="900" y2="310" stroke="#8a94a3" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="820" y1="340" x2="900" y2="430" stroke="#8a94a3" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Box: Neo4j -->
+  <rect x="900" y="130" width="260" height="90" rx="10" fill="#e3f3e9" stroke="#4fae7a" stroke-width="2"/>
+  <text x="1030" y="165" font-size="16" font-weight="700" fill="#2b2b2b" text-anchor="middle">Neo4j</text>
+  <text x="1030" y="187" font-size="12" fill="#3d8a63" text-anchor="middle">graph, APOC bulk merge</text>
+  <text x="1030" y="203" font-size="11" fill="#3d8a63" text-anchor="middle">case/deposition scoped labels</text>
+
+  <!-- Box: MongoDB -->
+  <rect x="900" y="265" width="260" height="90" rx="10" fill="#fbe4e4" stroke="#d97a7a" stroke-width="2"/>
+  <text x="1030" y="300" font-size="16" font-weight="700" fill="#2b2b2b" text-anchor="middle">MongoDB</text>
+  <text x="1030" y="322" font-size="12" fill="#b25555" text-anchor="middle">encrypted document store</text>
+  <text x="1030" y="338" font-size="11" fill="#b25555" text-anchor="middle">TOTP-authenticated batch write</text>
+
+  <!-- Box: Pinecone -->
+  <rect x="900" y="400" width="260" height="90" rx="10" fill="#e3ecfa" stroke="#5a86c9" stroke-width="2"/>
+  <text x="1030" y="435" font-size="16" font-weight="700" fill="#2b2b2b" text-anchor="middle">Pinecone</text>
+  <text x="1030" y="457" font-size="12" fill="#3f5f96" text-anchor="middle">1536-dim embeddings</text>
+  <text x="1030" y="473" font-size="11" fill="#3f5f96" text-anchor="middle">deposition-scoped semantic search</text>
+
+  <!-- caption -->
+  <text x="600" y="580" font-size="16" fill="#4a4a4a" text-anchor="middle">One deposition, three databases, one ID triad keeping all three in sync.</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#8a94a3"/>
+    </marker>
+  </defs>
+</svg>
